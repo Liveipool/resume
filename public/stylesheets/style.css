@@ -10,10 +10,15 @@ body {
   margin-top: 20px;
 }
 
-.container-fluid,
 .row,
 .part {
-  height: 820px;
+  /*height: 820px;*/
+  /*height: 100% !important;*/
+}
+
+.part {
+/*  height: 120% !important;
+  max-height: 100% !important;*/
 }
 
 .part {
@@ -34,7 +39,11 @@ body {
 }
 
 .introduction > div:nth-child(1) {
-  font-size: 39px;
+  font-size: 37px;
+}
+
+.introduction > div:nth-child(4) > span:nth-child(2) {
+  color: #fff;
 }
 
 .infor-name {
@@ -61,7 +70,7 @@ body {
 }
 
 .school-position {
-  font-size: 18px;
+  font-size: 17px;
   margin-left: 4px;
 }
 
