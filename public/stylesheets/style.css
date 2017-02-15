@@ -1,7 +1,11 @@
+html {
+  /*height: 100%;*/
+}
+
 body {
   margin: 0;
   padding: 0 20px;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   font-family: monospace;
 }
@@ -10,15 +14,15 @@ body {
   margin-top: 20px;
 }
 
+.container-fluid,
 .row,
 .part {
   /*height: 820px;*/
-  /*height: 100% !important;*/
+  height: 100%;
 }
 
-.part {
-/*  height: 120% !important;
-  max-height: 100% !important;*/
+.introduction {
+  /*max-height: 100% !important;*/
 }
 
 .part {
@@ -29,6 +33,7 @@ body {
 .introduction {
   background-color: #009999;
   color: #fff;
+  /*height: 100% !important;*/
 }
 
 .introduction > div:nth-child(-n + 3) {
@@ -40,10 +45,6 @@ body {
 
 .introduction > div:nth-child(1) {
   font-size: 37px;
-}
-
-.introduction > div:nth-child(4) > span:nth-child(2) {
-  color: #fff;
 }
 
 .infor-name {
@@ -126,4 +127,8 @@ img {
 
 .experience-time {
   float: right;
+}
+
+strong {
+  color: #009999;
 }
