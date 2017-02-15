@@ -13,7 +13,7 @@ body {
 .container-fluid,
 .row,
 .part {
-  height: 810px;
+  height: 820px;
 }
 
 .part {
@@ -86,15 +86,17 @@ img {
   text-align: center;
 }
 
-.skill > h1 {
+.skill > h1,
+.experience > h1 {
   margin: 20px 0 0 20px;
   font-size: 30px;
   font-weight: bold;
 }
 
-.skill-title {
+.skill-title,
+.experience-title {
   margin: 10px 20px 10px 20px;
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 10px;
   background-color: #454545;
   border-radius: 5px;
   color: #fff;
@@ -102,11 +104,17 @@ img {
   font-size: 20px;
 }
 
-.skill-item {
+.skill-item,
+.experience-item {
   margin: 0 20px 0 30px;
   font-size: 15px;
 }
 
-.skill-detail {
+.skill-detail,
+.experience-detail {
   margin-left: 5px;
+}
+
+.experience-time {
+  float: right;
 }
