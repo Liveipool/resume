@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
 }
 
-a {
-  color: #00B7FF;
+.container-fluid {
+  margin-top: 20px;
 }
+
+.container-fluid,
+.container-fluid > .row,
+.row > div {
+  height: 810px;
+}
+
+.row > div {
+  padding: 0;
+  border: 2px solid #454545;
+}
+
+
