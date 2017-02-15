@@ -3,6 +3,7 @@ body {
   padding: 0 20px;
   height: 100%;
   width: 100%;
+  font-family: monospace;
 }
 
 .container-fluid {
@@ -10,14 +11,102 @@ body {
 }
 
 .container-fluid,
-.container-fluid > .row,
-.row > div {
+.row,
+.part {
   height: 810px;
 }
 
-.row > div {
-  padding: 0;
-  border: 2px solid #454545;
+.part {
+  padding: 5px !important;
+  border: 1px solid #454545;
 }
 
+.introduction {
+  background-color: #009999;
+  color: #fff;
+}
 
+.introduction > div:nth-child(-n + 3) {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.introduction > div:nth-child(1) {
+  font-size: 39px;
+}
+
+.infor-name {
+  font-size: 21px;
+  margin: 18px 0 0 10px;
+}
+
+.infor-name > .glyphicon {
+  color: #454545;
+  margin-left: 4px;
+}
+
+.infor-value {
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.infor-name > a {
+  color: #fff;
+}
+
+.introduction > div:nth-child(8) > div {
+  margin: 10px 0 0 8px; 
+}
+
+.school-position {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.school-position-icon {
+  font-size: 16px;
+  color: #454545;
+}
+
+.introduction > .image {
+  margin: 17px auto 0 auto;
+}
+
+.introduction > .image,
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.wechat-name {
+  margin: 0 auto 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.skill > h1 {
+  margin: 20px 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.skill-title {
+  margin: 10px 20px 10px 20px;
+  padding: 0 0 0 10px;
+  background-color: #454545;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skill-item {
+  margin: 0 20px 0 30px;
+  font-size: 15px;
+}
+
+.skill-detail {
+  margin-left: 5px;
+}

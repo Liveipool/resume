@@ -3,6 +3,99 @@ extends layout
 block content
   div.container-fluid
     div.row
-      div.introduction.col-md-3.col-sm-6.col-xs-12 lalal
-      div.skill.col-md-5.col-sm-6.col-xs-12 hahah
-      div.experience.col-md-4.col-sm-12.col-xs-12 ooooo
+      div.part.introduction.col-lg-3.col-md-6.col-sm-6.col-xs-12
+        div 前端开发工程师
+        div 李为
+        div 中山大学软件工程
+        div.infor-name 手机
+          span.glyphicon.glyphicon-earphone 
+          span.infor-value 18826072459
+        div.infor-name 邮箱
+          span.glyphicon.glyphicon-envelope 
+          span.infor-value 123653079@qq.com
+        div.infor-name 博客
+          span.glyphicon.glyphicon-home 
+          a.infor-value(href='http://liveipool.com') liveipool.com
+        div.infor-name Github
+          span.glyphicon.glyphicon-tag 
+          a.infor-value(href='https://github.com/Liveipool') github@Liveipool
+        div.infor-name 在校职位
+          div
+            span.glyphicon.glyphicon-user.school-position-icon
+            span.school-position 校足球队队员
+          div
+            span.glyphicon.glyphicon-user.school-position-icon
+            span.school-position 中山大学现代Web实验室成员
+          div
+            span.glyphicon.glyphicon-user.school-position-icon
+            span.school-position 数据科学与计算机学院足球队队长
+        div.image
+          img(src='/images/weixin.jpg')
+        div.wechat-name Liveipool
+      div.part.skill.col-lg-5.col-md-6.col-sm-6.col-xs-12
+        h1 技术能力
+        div.skill-title HTML(结构)
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 熟悉HTML的使用,了解HTML5的新特性
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 使用过模板语言jade,了解其优点
+        div.skill-title CSS(表现)
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 熟悉CSS的使用，了解CSS3的新特性，如渐变、动画等。关注CSS4的动态
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 使用过预处理语言Sass，了解其优点
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 使用过Bootstrap，了解其响应式的原理，了解Google Material Design。
+        div.skill-title JavaScript(行为)
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 了解JavaScript和ECMAScript的关系及发展史
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 熟悉JavaScript的使用，对闭包、原型、this、Ajax等重要知识点有较为深入的理解
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 了解ES2015各新特性，正在使用实战进行深入学习，关注ES2016、ES2017的动态
+        div.skill-title 前端 类库/框架
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 能够使用但不依赖 jQuery，了解其主要思想及优缺点
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 在项目中使用过AngularJS，了解其部分特性。
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 正在项目中深入学习Vue，了解其双向绑定的原理等
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 了解Angular、Vue、React主流框架各自的核心思想、优缺点。了解MVC和MVVM的区别及各自的优缺点。
+        div.skill-title 构建/开发 工具
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 使用过gulp进行搭建简单的前端框架，了解其核心思想以及它能超越grunt的原因。
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 正在项目中深入学习webpack，了解其核心思想。
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 能够熟练使用Git进行团队开发
+        div.skill-title 后端、数据库、底层知识
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 使用过后端框架Express和loopback，了解核心概念
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 能够在项目中使用Nodejs实现部分功能，了解其原理和常见的使用
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 在项目中使用过mongodb作为数据库，能进行数据的增删差改等操作。
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 熟悉HTTP、TCP、IP、DNS等底层协议
+      div.part.experience.col-lg-4.col-md-12.col-sm-12.col-xs-12 项目经历
+
