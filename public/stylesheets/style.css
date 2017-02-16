@@ -76,7 +76,7 @@ span[class="infor-value"],
 }
 
 #introduction > .image {
-  margin: 10px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 
 #introduction > .image,
@@ -130,4 +130,8 @@ strong {
 
 .part-bottom {
   margin-bottom: 10px;
+}
+
+a {
+  text-decoration: underline !important;
 }
