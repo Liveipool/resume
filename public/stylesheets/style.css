@@ -32,9 +32,13 @@ body {
 }
 
 #introduction > div:nth-child(1) {
-  margin-top: 15px;
   font-size: 37px;
   font-family: monospace !important;
+  margin: 15px auto 0 auto;
+  width: 7em;
+  animation: typing 1.5s steps(7);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .infor-name {
@@ -134,4 +138,26 @@ strong {
 
 a {
   text-decoration: underline !important;
+}
+
+@keyframes typing {
+  from {width: 0;}
+}
+/*Firefox*/
+@-moz-keyframes typing {
+  from {width: 0;}
+}
+
+/*Opera*/
+@-o-keyframes typing {
+  from {width: 0;}
+}
+
+/*Safari 和 Chrome*/
+@-webkit-keyframes typing {
+  from {width: 0;}
+}
+
+#introduction > div:nth-child(1) {
+  animation: typing 1.5s steps(7);
 }
