@@ -3,24 +3,25 @@ window.onload = function() {
   var skill=document.getElementById("skill")
   var experience=document.getElementById("experience") 
 
-  var introductionHeight = introduction.scrollHeight;
-  var skillHeight = skill.scrollHeight;
-  var experienceHeight = experience.scrollHeight;
+  var introductionHeight,skillHeight,experienceHeight,layoutHeight, display;
 
-  var layoutHeight, display;
+  getScrollHeight();
+
+  function getScrollHeight() {
+    introductionHeight = introduction.scrollHeight;
+    skillHeight = skill.scrollHeight;
+    experienceHeight = experience.scrollHeight;  
+  }
 
   function initial() {
     if (window.innerWidth >=1200) {
       display = 3;
       layoutHeight = Math.max(introductionHeight, skillHeight, experienceHeight) 
-      introduction.style.height = layoutHeight + 'px';
-      skill.style.height = layoutHeight + 'px';
-      experience.style.height = layoutHeight + 'px';
+      assign(true, true, true);
     } else if (window.innerWidth < 1200 & window.innerWidth >= 768) {
       display = 2;
       layoutHeight = Math.max(introductionHeight, skillHeight) 
-      introduction.style.height = layoutHeight + 'px';
-      skill.style.height = layoutHeight + 'px';
+      assign(true, true, false);
     } else {
       display = 1;
     }
@@ -28,44 +29,35 @@ window.onload = function() {
 
   initial();
 
+  function assign(isIntroProvided, isSkillProvided, isExperProvided) {
+    introduction.style.height = isIntroProvided == true ? layoutHeight + 'px' : '';
+    skill.style.height = isSkillProvided == true ? layoutHeight + 'px' : '';
+    experience.style.height = isExperProvided == true ? layoutHeight + 'px' : '';
+  }
+
   var handler = function() {
     if (window.innerWidth >= 1200) {
       if (display != 3) { 
-        introduction.style.height = '';
-        skill.style.height = '';
-        experience.style.height = '';
+        assign(false, false, false);
         display = 3;
       }
       if (window.innerWidth > 1500) {
-        introduction.style.height = '';
-        skill.style.height = '';
-        experience.style.height = '';        
+        assign(false, false, false);      
       }
-      introductionHeight = introduction.scrollHeight;
-      skillHeight = skill.scrollHeight;
-      experienceHeight = experience.scrollHeight;
+      getScrollHeight();
       layoutHeight=Math.max(introductionHeight, skillHeight, experienceHeight) 
-      introduction.style.height = layoutHeight + 'px';
-      skill.style.height = layoutHeight + 'px';
-      experience.style.height = layoutHeight + 'px';
+      assign(true, true, true);
     } else if (window.innerWidth < 1200 & window.innerWidth >= 768) {
       if (display != 2) { 
-        introduction.style.height = '';
-        skill.style.height = '';
-        experience.style.height = '';
+        assign(false, false, false);
         display = 2;
       }
-      introductionHeight = introduction.scrollHeight;
-      skillHeight = skill.scrollHeight;
-      layoutHeight=Math.max(introductionHeight, skillHeight) 
-      introduction.style.height = layoutHeight + 'px';
-      skill.style.height = layoutHeight + 'px';
-      experience.style.height = '';      
+      getScrollHeight();
+      layoutHeight=Math.max(introductionHeight, skillHeight)
+      assign(true, true, false);  
     } else {
       display = 1;
-      introduction.style.height = '';
-      skill.style.height = '';
-      experience.style.height = '';
+      assign(false, false, false);
     }
   }
 

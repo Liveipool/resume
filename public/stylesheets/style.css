@@ -52,6 +52,11 @@ body {
   margin-left: 12px;
 }
 
+span[class="infor-value"],
+.glyphicon-home ~ a {
+  margin-left: 32px;
+}
+
 .infor-name > a {
   color: #fff;
 }
