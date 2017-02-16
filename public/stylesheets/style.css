@@ -34,6 +34,7 @@ body {
 #introduction > div:nth-child(1) {
   font-size: 37px;
   font-family: monospace !important;
+  font-weight: bold;
   margin: 15px auto 0 auto;
   width: 7em;
   animation: typing 1.5s steps(7);
