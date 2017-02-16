@@ -159,5 +159,8 @@ a {
 }
 
 #introduction > div:nth-child(1) {
-  animation: typing 1.5s steps(7);
+  animation: typing 2s steps(7);
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
