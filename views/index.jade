@@ -3,7 +3,7 @@ extends layout
 block content
   div.container-fluid
     div.row
-      div.part.introduction.col-lg-3.col-md-6.col-sm-6.col-xs-12
+      div#introduction.part.col-lg-3.col-md-5.col-sm-5.col-xs-12
         div 前端开发实习生
         div 李为
         div 中山大学软件工程
@@ -32,7 +32,7 @@ block content
         div.image
           img(src='/images/weixin.jpg')
         div.wechat-name Liveipool
-      div.part.skill.col-lg-5.col-md-6.col-sm-6.col-xs-12
+      div#skill.part.col-lg-5.col-md-7.col-sm-7.col-xs-12
         h1 技术能力
         div.skill-title HTML(结构)
         div.skill-item
@@ -94,10 +94,10 @@ block content
         div.skill-item
           span.glyphicon.glyphicon-check
           span.skill-detail 在项目中使用过mongodb作为数据库，能进行数据的增删差改等操作。
-        div.skill-item
+        div.skill-item.part-bottom
           span.glyphicon.glyphicon-check
           span.skill-detail 熟悉HTTP、TCP、IP、DNS等底层协议
-      div.part.experience.col-lg-4.col-md-12.col-sm-12.col-xs-12
+      div#experience.part.col-lg-4.col-md-12.col-sm-12.col-xs-12
         h1 项目经历
         div.experience-title 前端学习历程
           span.experience-time 2015.10至今
@@ -160,6 +160,6 @@ block content
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 前端使用Bootsrtap框架进行响应式设计，后端使用Exoress框架
-        div.experience-item
+        div.experience-item.part-bottom
           span.glyphicon.glyphicon-send
           span.experience-detail 进行简历的开发,并购买云服务器进行配置上线。

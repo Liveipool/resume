@@ -7,22 +7,11 @@ body {
   padding: 0 20px;
   /*height: 100%;*/
   width: 100%;
-  font-family: monospace;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .container-fluid {
   margin-top: 20px;
-}
-
-.container-fluid,
-.row,
-.part {
-  /*height: 820px;*/
-  height: 100%;
-}
-
-.introduction {
-  /*max-height: 100% !important;*/
 }
 
 .part {
@@ -30,21 +19,22 @@ body {
   border: 1px solid #454545;
 }
 
-.introduction {
+#introduction {
   background-color: #009999;
   color: #fff;
-  /*height: 100% !important;*/
 }
 
-.introduction > div:nth-child(-n + 3) {
+#introduction > div:nth-child(-n + 3) {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
-.introduction > div:nth-child(1) {
+#introduction > div:nth-child(1) {
+  margin-top: 15px;
   font-size: 37px;
+  font-family: monospace !important;
 }
 
 .infor-name {
@@ -66,7 +56,7 @@ body {
   color: #fff;
 }
 
-.introduction > div:nth-child(8) > div {
+#introduction > div:nth-child(8) > div {
   margin: 10px 0 0 8px; 
 }
 
@@ -80,11 +70,11 @@ body {
   color: #454545;
 }
 
-.introduction > .image {
-  margin: 17px auto 0 auto;
+#introduction > .image {
+  margin: 10px auto 0 auto;
 }
 
-.introduction > .image,
+#introduction > .image,
 img {
   width: 200px;
   height: 200px;
@@ -96,9 +86,9 @@ img {
   text-align: center;
 }
 
-.skill > h1,
-.experience > h1 {
-  margin: 20px 0 0 20px;
+#skill > h1,
+#experience > h1 {
+  margin: 25px 0 0 20px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -131,4 +121,8 @@ img {
 
 strong {
   color: #009999;
+}
+
+.part-bottom {
+  margin-bottom: 10px;
 }
