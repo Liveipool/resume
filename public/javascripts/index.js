@@ -14,7 +14,17 @@ window.onload = function() {
   }
 
   function initial() {
-    if (window.innerWidth >=1200) {
+    // if (window.innerWidth >= 1440) {
+    //   introduction.className = 'part col-md-3 col-sm-4 col-xs-12 col-lg-2';
+    //   experience.className = 'part col-md-9 col-sm-8 col-xs-12 col-lg-6';
+    //   skill.className = 'part col-md-12 col-sm-12 col-xs-12 col-lg-4';
+    // } else if (window.innerWidth < 1440 && window.innerWidth >= 1200) {
+    //   introduction.className = 'part col-md-3 col-sm-4 col-xs-12 col-lg-4';
+    //   experience.className = 'part col-md-9 col-sm-8 col-xs-12 col-lg-8';
+    //   skill.className = 'part col-md-12 col-sm-12 col-xs-12 col-lg-12';
+    // }
+
+    if (window.innerWidth >= 1200) {
       display = 3;
       layoutHeight = Math.max(introductionHeight, experienceHeight, skillHeight) 
       assign(true, true, true);

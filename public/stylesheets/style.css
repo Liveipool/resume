@@ -12,6 +12,17 @@ body {
   padding: 5px !important;
   border: 1px solid #454545;
 }
+a {
+  /*text-decoration: underline !important;*/
+  border-bottom: 1px solid #fff;
+  text-decoration: none !important;
+}
+strong {
+  color: #009999;
+}
+.part-bottom {
+  margin-bottom: 5px;
+}
 
 /*个人信息板块*/
 #introduction {
@@ -120,17 +131,20 @@ img {
 .skill-title,
 .experience-title {
   margin: 10px 18px 10px 18px;
-  padding: 2px 5px 0 8px;
+  padding: 2px 8px 0 8px;
   background-color: #454545;
   border-radius: 5px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
+
 .experience-title > a {
-  color: #fff;
-  font-size: 16px;
+  color: #F2F2F2;
+  font-size: 17px;
   margin-left: 20px;
+  border-bottom: 0;
+  text-decoration: underline !important;
 }
 .experience-title > a:hover {
   color: #009999;
@@ -145,6 +159,9 @@ img {
   margin: 0 18px 0 0;
   font-size: 16px;
 }
+.experience-item > a {
+  border-bottom: 1px solid #009999;
+}
 .skill-item {
   margin: 0 18px 0 30px;
   font-size: 16px;
@@ -156,81 +173,66 @@ img {
 
 /* 每个项目经历的总结 */
 .conclusion-text {
-  font-size: 30px;
+  font-size: 22px;
   float: left;
   margin-left: 30px;
   font-weight: bold;
   color: #454545;
 }
 #conclusion-text-first {
-  margin-top: 3px;
+  margin-top: 7px;
 }
 #conclusion-text-second {
-  margin-top: 30px;
+  margin-top: 38px;
 }
 #conclusion-text-third {
-  margin-top: 13px;
+  margin-top: 17px;
 }
 #conclusion-text-fourth {
-  margin-top: 13px;
+  margin-top: 17px;
 }
 #conclusion-text-fifth {
-  margin-top: 43px;
+  margin-top: 51px;
 }
 #conclusion-text-sixth {
-  margin-top: 3px;
+  margin-top: 9px;
 }
 
 .conclusion {
   float: left;
   margin: 0 8px 0 14px;
-  background-color: #009999;
+  background-color: #454545;
   border-radius: 10%;
   width: 3px;
+
   background-image: linear-gradient(#009999 50%, #454545 0);
 }
 #conclusion-first {
   height: 43px;
-  /*background-image: linear-gradient(#009999 16%, #454545 0);*/
+  /*background-image: linear-gradient(#009999 10%, #454545 0);*/
 }
 #conclusion-second {
   height: 108px;
-  /*background-image: linear-gradient(#009999 32%, #454545 0);*/
+  /*background-image: linear-gradient(#009999 20%, #454545 0);*/
 }
 #conclusion-third {
   height: 64px;
-  /*background-image: linear-gradient(#009999 48%, #454545 0);*/
+  /*background-image: linear-gradient(#009999 30%, #454545 0);*/
 }
 #conclusion-fourth {
   height: 64px;
-  /*background-image: linear-gradient(#009999 64%, #454545 0);*/
+  /*background-image: linear-gradient(#009999 40%, #454545 0);*/
 }
 #conclusion-fifth {
   height: 129px;
-  /*background-image: linear-gradient(#009999 80%, #454545 0);*/
+  /*background-image: linear-gradient(#009999 50%, #454545 0);*/
 }
 #conclusion-sixth {
   height: 43px;
-  /*background-image: linear-gradient(#009999 100%, #454545 0);*/
-}
-/* 一些全局内容样式 */
-strong {
-  color: #009999;
+  /*background-image: linear-gradient(#009999 60%, #454545 0);*/
 }
 
-.part-bottom {
-  margin-bottom: 5px;
-}
 
-a {
-  /*text-decoration: underline !important;*/
-  border-bottom: 1px solid #fff;
-  text-decoration: none !important;
-}
-
-.experience-item > a {
-  border-bottom: 1px solid #009999;
-}
 
 /*闪烁动画*/
 /*@keyframes blink-smooth {
