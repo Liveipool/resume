@@ -40,6 +40,9 @@ body {
   font-size: 21px;
   margin: 18px 0 0 0;
 }
+.infor-item:nth-child(4) {
+  margin-top: 25px;
+}
 #infor-icon-graduate {
   width: 25px;
   height: 30px;
@@ -74,12 +77,12 @@ body {
 
 /* 在校职位 */
 #school-position-title {
-  margin: 18px 0 0 2px;
+  margin: 25px 0 0 2px;
   font-size: 18px;
 }
 /* 三条职位 */
 #introduction > div:nth-child(9) > div {
-  margin: 10px 0 0 5px; 
+  margin: 13px 0 0 5px; 
 }
 .school-position-icon {
   font-size: 16px;
@@ -92,7 +95,7 @@ body {
 
 /* 二维码和微信名*/
 #introduction > .image {
-  margin: 30px auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 #introduction > .image,
 img {
@@ -100,7 +103,7 @@ img {
   height: 170px;
 }
 .wechat-name {
-  margin: 0 auto 0 auto;
+  margin: 5px auto 0 auto;
   font-size: 30px;
   text-align: center;
 }
@@ -139,7 +142,7 @@ img {
 }
 
 .experience-item {
-  margin: 0 18px 0 110px;
+  margin: 0 18px 0 0;
   font-size: 16px;
 }
 .skill-item {
@@ -151,48 +154,106 @@ img {
   margin-left: 5px;
 }
 
-.conclusion {
-  font-size: 32px;
+/* 每个项目经历的总结 */
+.conclusion-text {
+  font-size: 30px;
   float: left;
-  margin: 0 0 0 28px;
-  /*background-color: #454545;*/
-  /*border-radius: 20%;*/
-  color: #454545;
+  margin-left: 30px;
   font-weight: bold;
+  color: #454545;
+}
+#conclusion-text-first {
+  margin-top: 3px;
+}
+#conclusion-text-second {
+  margin-top: 30px;
+}
+#conclusion-text-third {
+  margin-top: 13px;
+}
+#conclusion-text-fourth {
+  margin-top: 13px;
+}
+#conclusion-text-fifth {
+  margin-top: 43px;
+}
+#conclusion-text-sixth {
+  margin-top: 3px;
 }
 
+.conclusion {
+  float: left;
+  margin: 0 8px 0 14px;
+  background-color: #009999;
+  border-radius: 10%;
+  width: 3px;
+  background-image: linear-gradient(#009999 50%, #454545 0);
+}
+#conclusion-first {
+  height: 43px;
+  /*background-image: linear-gradient(#009999 16%, #454545 0);*/
+}
+#conclusion-second {
+  height: 108px;
+  /*background-image: linear-gradient(#009999 32%, #454545 0);*/
+}
+#conclusion-third {
+  height: 64px;
+  /*background-image: linear-gradient(#009999 48%, #454545 0);*/
+}
+#conclusion-fourth {
+  height: 64px;
+  /*background-image: linear-gradient(#009999 64%, #454545 0);*/
+}
+#conclusion-fifth {
+  height: 129px;
+  /*background-image: linear-gradient(#009999 80%, #454545 0);*/
+}
+#conclusion-sixth {
+  height: 43px;
+  /*background-image: linear-gradient(#009999 100%, #454545 0);*/
+}
 /* 一些全局内容样式 */
 strong {
   color: #009999;
 }
 
 .part-bottom {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 a {
-  text-decoration: underline !important;
+  /*text-decoration: underline !important;*/
+  border-bottom: 1px solid #fff;
+  text-decoration: none !important;
 }
 
-/*职位的逐字呈现动画*/
-/*@keyframes typing {
-  from {width: 0;}
+.experience-item > a {
+  border-bottom: 1px solid #009999;
 }
-@-moz-keyframes typing {
-  from {width: 0;}
+
+/*闪烁动画*/
+/*@keyframes blink-smooth {
+  to {color: transparent;}
 }
-@-o-keyframes typing {
-  from {width: 0;}
+@-moz-keyframes blink-smooth {
+  to {color: transparent;}
 }
-@-webkit-keyframes typing {
-  from {width: 0;}
+@-o-keyframes blink-smooth {
+  to {color: transparent;}
+}
+@-webkit-keyframes blink-smooth {
+  to {color: transparent;}
 }
 
 #introduction > div:nth-child(1) {
-  animation: typing 2s steps(7);
+  animation: .5s blink-smooth 6 alternate;
+  -moz-animation: .5s blink-smooth 6 alternate;
+  -webkit-animation: .5s blink-smooth 6 alternate;
   animation-delay: 1s;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
-  white-space: nowrap;
-  overflow: hidden;
 }*/
+/*  animation: blink-smooth 2s steps(7);
+  white-space: nowrap;
+  overflow: hidden;*/

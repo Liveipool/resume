@@ -4,7 +4,7 @@ block content
   div.container-fluid
     div.row
       div#introduction.part.col-lg-2.col-md-3.col-sm-4.col-xs-12
-        div#anim 前端开发实习生
+        div 前端开发实习生
         div 李为
         div 中山大学软件工程
         div.infor-item 
@@ -39,18 +39,19 @@ block content
         h1 项目经历
         div.experience-title 前端学习历程
           span.experience-time 2015.10至今
-        //- div.conclusion 起步
+        div.conclusion-text#conclusion-text-first 起步
+        div.conclusion#conclusion-first 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 大二上学期通过web2.0课程<strong>接触并喜欢上</strong>前端开发，一直学习至今
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 凭借课程<strong>前30名</strong>的成绩进入<strong>“中山大学现代web实验室”</strong>
-
         div.experience-title 实验室项目"MA"
           a(href='http://liveipool.com/blog/2017/02/16/MA-Screenshot/' target='_blank') 运行截图
           span.experience-time 2016.7～2016.10
-        //- div.conclusion 经验
+        div.conclusion-text#conclusion-text-second 经验
+        div.conclusion#conclusion-second 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail “My Achievements”项目是下一届web2.0课程<strong>作业提交系统</strong>
@@ -66,12 +67,12 @@ block content
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 数据库使用mongodb，使用gitlab作为代码仓库
-
         div.experience-title 搭建个人博客
           a(href='http://liveipool.com/' target='_blank') 博客地址
           a(href='https://github.com/Liveipool/Liveipool.github.io' target='_blank') 源代码
           span.experience-time 2016.9
-        //- div.conclusion 积累
+        div.conclusion-text#conclusion-text-third 积累
+        div.conclusion#conclusion-third 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 受阮一峰等大牛影响，养成写<strong>个人博客</strong>的习惯
@@ -82,12 +83,12 @@ block content
           span.glyphicon.glyphicon-send
           span.experience-detail 使用Github Pages进行搭建，并链接上自己的域名：
           a(href='http://liveipool.com/about/' target='_blank') <strong>liveipool.com</strong>
-
         div.experience-title 搭建前端学习框架
           a(href='http://liveipool.com/blog/2016/12/15/Use-Gulp-To-Build-A-Simple-Framework/' target='_blank') 记录文章
           a(href='https://github.com/Liveipool/studying-frame' target='_blank') 源代码
           span.experience-time 2016.12
-        //- div.conclusion 苦练
+        div.conclusion-text#conclusion-text-fourth 苦练
+        div.conclusion#conclusion-fourth 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 使用<strong>gulp</strong>搭建了一个简单的前端学习框架
@@ -97,12 +98,12 @@ block content
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 其中jade作为模板语言，sass作为css预处理语言
-
         div.experience-title 项目 “HWFC”
           a(href='http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation/' target='_blank') 项目文档
           a(href='https://github.com/Liveipool/HWFC' target='_blank') 源代码
           span.experience-time 2016.12至今
-        //- div.conclusion 兴趣
+        div.conclusion-text#conclusion-text-fifth 兴趣
+        div.conclusion#conclusion-fifth 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail HWFC项目是院足球队官方网站，目前即将结束设计和策划阶段
@@ -121,12 +122,12 @@ block content
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 使用石墨文档<strong>协同</strong>文档开发，ProcessOn协同原型图的设计
-
         div.experience-title 开发并上线个人简历
           a(href='http://liveipool.com/blog/2017/02/11/Set-up-a-small-project-with-qCloud/' target='_blank') 记录文章 
           a(href='https://github.com/Liveipool/resume' target='_blank') 源代码
           span.experience-time 2017.2
-        //- div.conclusion 出发
+        div.conclusion-text#conclusion-text-sixth 实习
+        div.conclusion#conclusion-sixth 
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 开发个人简历页面用于实习生春招，购买云服务器进行<strong>配置上线</strong>
@@ -152,9 +153,9 @@ block content
         div.skill-item
           span.glyphicon.glyphicon-check
           span.skill-detail 使用过<strong>Bootstrap</strong>前端框架
-        //- div.skill-item
-        //-   span.glyphicon.glyphicon-check
-        //-   span.skill-detail 了解Google Material Design,使用过Angular Material框架
+        div.skill-item
+          span.glyphicon.glyphicon-check
+          span.skill-detail 了解Google Material Design的一些基本思想
         div.skill-title JavaScript
         div.skill-item
           span.glyphicon.glyphicon-check
@@ -204,7 +205,7 @@ block content
         div.skill-item
           span.glyphicon.glyphicon-check
           span.skill-detail 使用过后端框架<strong>Express</strong>和loopback
-        div.skill-item
+        div.skill-item.part-bottom
           span.glyphicon.glyphicon-check
           span.skill-detail 能够使用<strong>mongodb</strong>数据库
         //- div.skill-item.part-bottom
