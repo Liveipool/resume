@@ -156,7 +156,7 @@ img {
 }
 
 .experience-item {
-  margin: 0 18px 0 0;
+  margin: 0 18px 0 28px;
   font-size: 16px;
 }
 .experience-item > a {
@@ -169,6 +169,9 @@ img {
 .skill-detail,
 .experience-detail {
   margin-left: 5px;
+}
+.experience-detail-anchor {
+  margin-left: 15px;
 }
 
 /* 每个项目经历的总结 */
