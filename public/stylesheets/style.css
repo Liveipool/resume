@@ -1,152 +1,167 @@
-html {
-  /*height: 100%;*/
-}
-
+/*整体布局*/
 body {
   margin: 0;
   padding: 0 20px;
-  /*height: 100%;*/
   width: 100%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
 .container-fluid {
   margin-top: 20px;
 }
-
 .part {
   padding: 5px !important;
   border: 1px solid #454545;
 }
 
+/*个人信息板块*/
 #introduction {
   background-color: #009999;
   color: #fff;
-  /*min-width: 285px;*/
 }
 
+/*职位、名字和学校专业*/
 #introduction > div:nth-child(-n + 3) {
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
-  font-size: 28px;
+  margin: 10px -3px 0 -3px;
+  font-size: 23px;
 }
 
+/*顶部的职位*/
 #introduction > div:nth-child(1) {
-  font-size: 37px;
+  font-size: 32px;
   font-family: monospace !important;
   font-weight: bold;
-  margin: 15px auto 0 auto;
-  width: 7em;
-  animation: typing 1.5s steps(7);
-  white-space: nowrap;
-  overflow: hidden;
+  margin-top: 15px;
 }
 
-.infor-name {
+/* 五条个人信息 */
+.infor-item {
   font-size: 21px;
   margin: 18px 0 0 0;
 }
-
-.infor-name > .glyphicon,
-#infor-icon-graduate,
-#infor-icon-github {
-  color: #454545;
-  margin-left: 2px;
-}
-
 #infor-icon-graduate {
-  margin-left: 0;
   width: 25px;
   height: 30px;
 }
-
+.infor-item > .glyphicon {
+  color: #454545;
+  margin-left: 3px;
+}
 #infor-icon-github {
-  width: 24px;
-  height: 27px;
+  margin-left: 1px;
+  width: 25px;
+  height: 26px;
 }
-
+/* 五条个人信息的值 */
 .infor-value {
-  font-size: 18px;
-  margin-left: 8px;
+  font-size: 19px;
+  margin-left: 12px;
 }
-
+.glyphicon-home + .infor-value {
+  margin-left: 13px;
+}
 #infor-icon-graduate + .infor-value {
-  margin-left: 6px;
+  margin-left: 9px;
 }
-
-/*span[class="infor-value"],
-.glyphicon-home ~ a {
-  margin-left: 32px;
-}*/
-
-.infor-name > a {
+.infor-item > a {
   color: #fff;
 }
-
-#introduction > div:nth-child(8) > div {
-  margin: 10px 0 0 8px; 
+.infor-item > a:hover {
+  color: #454545;
+  font-size: 20px;
 }
 
-.school-position {
-  font-size: 17px;
-  margin-left: 4px;
+/* 在校职位 */
+#school-position-title {
+  margin: 18px 0 0 2px;
+  font-size: 18px;
 }
-
+/* 三条职位 */
+#introduction > div:nth-child(9) > div {
+  margin: 10px 0 0 5px; 
+}
 .school-position-icon {
   font-size: 16px;
   color: #454545;
 }
-
-#introduction > .image {
-  margin: 25px auto 0 auto;
+.school-position {
+  font-size: 16px;
+  margin-left: 4px;
 }
 
+/* 二维码和微信名*/
+#introduction > .image {
+  margin: 30px auto 0 auto;
+}
 #introduction > .image,
 img {
   width: 170px;
   height: 170px;
 }
-
 .wechat-name {
   margin: 0 auto 0 auto;
   font-size: 30px;
   text-align: center;
 }
 
+/* 项目经历和技术能力*/
+/* 大标题 */
 #skill > h1,
 #experience > h1 {
   margin: 25px 0 0 20px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
-
+/* 各小标题 */
 .skill-title,
 .experience-title {
-  margin: 10px 20px 10px 20px;
-  padding: 0 10px 0 10px;
+  margin: 10px 18px 10px 18px;
+  padding: 2px 5px 0 8px;
   background-color: #454545;
   border-radius: 5px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
-
-.skill-item,
-.experience-item {
-  margin: 0 20px 0 30px;
-  font-size: 15px;
+.experience-title > a {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.experience-title > a:hover {
+  color: #009999;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.experience-time {
+  float: right;
 }
 
+.experience-item {
+  margin: 0 18px 0 110px;
+  font-size: 16px;
+}
+.skill-item {
+  margin: 0 18px 0 30px;
+  font-size: 16px;
+}
 .skill-detail,
 .experience-detail {
   margin-left: 5px;
 }
 
-.experience-time {
-  float: right;
+.conclusion {
+  font-size: 32px;
+  float: left;
+  margin: 0 0 0 28px;
+  /*background-color: #454545;*/
+  /*border-radius: 20%;*/
+  color: #454545;
+  font-weight: bold;
 }
 
+/* 一些全局内容样式 */
 strong {
   color: #009999;
 }
@@ -159,20 +174,16 @@ a {
   text-decoration: underline !important;
 }
 
-@keyframes typing {
+/*职位的逐字呈现动画*/
+/*@keyframes typing {
   from {width: 0;}
 }
-/*Firefox*/
 @-moz-keyframes typing {
   from {width: 0;}
 }
-
-/*Opera*/
 @-o-keyframes typing {
   from {width: 0;}
 }
-
-/*Safari 和 Chrome*/
 @-webkit-keyframes typing {
   from {width: 0;}
 }
@@ -182,4 +193,6 @@ a {
   animation-delay: 1s;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
-}
+  white-space: nowrap;
+  overflow: hidden;
+}*/

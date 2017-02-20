@@ -3,42 +3,43 @@ extends layout
 block content
   div.container-fluid
     div.row
-      div#introduction.part.col-lg-2.col-md-4.col-sm-4.col-xs-12
+      div#introduction.part.col-lg-2.col-md-3.col-sm-4.col-xs-12
         div#anim 前端开发实习生
         div 李为
         div 中山大学软件工程
-        div.infor-name 
+        div.infor-item 
           img#infor-icon-graduate(src='/images/graduate.png')
           span.infor-value 18届本科毕业生
-        div.infor-name 
+        div.infor-item 
           span.glyphicon.glyphicon-earphone 
           span.infor-value 18826072459
-        div.infor-name 
+        div.infor-item 
           span.glyphicon.glyphicon-envelope 
           span.infor-value 123653079@qq.com
-        div.infor-name 
+        div.infor-item 
           span.glyphicon.glyphicon-home 
           a.infor-value(href='http://liveipool.com' target='_blank') liveipool.com
-        div.infor-name 
+        div.infor-item 
           img#infor-icon-github(src='/images/github_one.png')
           a.infor-value(href='https://github.com/Liveipool' target='_blank') github@Liveipool
-        div.infor-name 在校职位
+        div#school-position-title 在校职位
           div
             span.glyphicon.glyphicon-user.school-position-icon
             span.school-position 校足球队队员
           div
             span.glyphicon.glyphicon-user.school-position-icon
-            span.school-position 中山大学现代Web实验室成员
+            span.school-position 现代Web实验室成员
           div
             span.glyphicon.glyphicon-user.school-position-icon
             span.school-position 数据科学与计算机学院足球队队长
         div.image
           img(src='/images/weixin.jpg')
         div.wechat-name Liveipool
-      div#experience.part.col-lg-6.col-md-8.col-sm-8.col-xs-12
+      div#experience.part.col-lg-6.col-md-9.col-sm-8.col-xs-12
         h1 项目经历
         div.experience-title 前端学习历程
           span.experience-time 2015.10至今
+        //- div.conclusion 起步
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 大二上学期通过web2.0课程<strong>接触并喜欢上</strong>前端开发，一直学习至今
@@ -49,6 +50,7 @@ block content
         div.experience-title 实验室项目"MA"
           a(href='http://liveipool.com/blog/2017/02/16/MA-Screenshot/' target='_blank') 运行截图
           span.experience-time 2016.7～2016.10
+        //- div.conclusion 经验
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail “My Achievements”项目是下一届web2.0课程<strong>作业提交系统</strong>
@@ -69,6 +71,7 @@ block content
           a(href='http://liveipool.com/' target='_blank') 博客地址
           a(href='https://github.com/Liveipool/Liveipool.github.io' target='_blank') 源代码
           span.experience-time 2016.9
+        //- div.conclusion 积累
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 受阮一峰等大牛影响，养成写<strong>个人博客</strong>的习惯
@@ -84,6 +87,7 @@ block content
           a(href='http://liveipool.com/blog/2016/12/15/Use-Gulp-To-Build-A-Simple-Framework/' target='_blank') 记录文章
           a(href='https://github.com/Liveipool/studying-frame' target='_blank') 源代码
           span.experience-time 2016.12
+        //- div.conclusion 苦练
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 使用<strong>gulp</strong>搭建了一个简单的前端学习框架
@@ -94,10 +98,11 @@ block content
           span.glyphicon.glyphicon-send
           span.experience-detail 其中jade作为模板语言，sass作为css预处理语言
 
-        div.experience-title 自愿项目 “HWFC”
+        div.experience-title 项目 “HWFC”
           a(href='http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation/' target='_blank') 项目文档
           a(href='https://github.com/Liveipool/HWFC' target='_blank') 源代码
           span.experience-time 2016.12至今
+        //- div.conclusion 兴趣
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail HWFC项目是院足球队官方网站，目前即将结束设计和策划阶段
@@ -121,6 +126,7 @@ block content
           a(href='http://liveipool.com/blog/2017/02/11/Set-up-a-small-project-with-qCloud/' target='_blank') 记录文章 
           a(href='https://github.com/Liveipool/resume' target='_blank') 源代码
           span.experience-time 2017.2
+        //- div.conclusion 出发
         div.experience-item
           span.glyphicon.glyphicon-send
           span.experience-detail 开发个人简历页面用于实习生春招，购买云服务器进行<strong>配置上线</strong>
