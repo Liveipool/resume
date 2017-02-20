@@ -1,7 +1,7 @@
 window.onload = function() {
   var introduction=document.getElementById("introduction") 
-  var skill=document.getElementById("skill")
   var experience=document.getElementById("experience") 
+  var skill=document.getElementById("skill")
 
   var introductionHeight,skillHeight,experienceHeight,layoutHeight, display;
 
@@ -9,18 +9,18 @@ window.onload = function() {
 
   function getScrollHeight() {
     introductionHeight = introduction.scrollHeight;
-    skillHeight = skill.scrollHeight;
     experienceHeight = experience.scrollHeight;  
+    skillHeight = skill.scrollHeight;
   }
 
   function initial() {
     if (window.innerWidth >=1200) {
       display = 3;
-      layoutHeight = Math.max(introductionHeight, skillHeight, experienceHeight) 
+      layoutHeight = Math.max(introductionHeight, experienceHeight, skillHeight) 
       assign(true, true, true);
     } else if (window.innerWidth < 1200 & window.innerWidth >= 768) {
       display = 2;
-      layoutHeight = Math.max(introductionHeight, skillHeight) 
+      layoutHeight = Math.max(introductionHeight, experienceHeight) 
       assign(true, true, false);
     } else {
       display = 1;
@@ -29,10 +29,10 @@ window.onload = function() {
 
   initial();
 
-  function assign(isIntroProvided, isSkillProvided, isExperProvided) {
+  function assign(isIntroProvided, isExperProvided, isSkillProvided) {
     introduction.style.height = isIntroProvided == true ? layoutHeight + 'px' : '';
-    skill.style.height = isSkillProvided == true ? layoutHeight + 'px' : '';
     experience.style.height = isExperProvided == true ? layoutHeight + 'px' : '';
+    skill.style.height = isSkillProvided == true ? layoutHeight + 'px' : '';
   }
 
   var handler = function() {
@@ -45,7 +45,7 @@ window.onload = function() {
         assign(false, false, false);      
       }
       getScrollHeight();
-      layoutHeight=Math.max(introductionHeight, skillHeight, experienceHeight) 
+      layoutHeight=Math.max(introductionHeight, experienceHeight, skillHeight) 
       assign(true, true, true);
     } else if (window.innerWidth < 1200 & window.innerWidth >= 768) {
       if (display != 2) { 
@@ -53,7 +53,7 @@ window.onload = function() {
         display = 2;
       }
       getScrollHeight();
-      layoutHeight=Math.max(introductionHeight, skillHeight)
+      layoutHeight=Math.max(introductionHeight, experienceHeight)
       assign(true, true, false);  
     } else {
       display = 1;
