@@ -7,13 +7,13 @@ body {
 }
 .container-fluid {
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 .part {
   padding: 5px !important;
   border: 1px solid #454545;
 }
 a {
-  /*text-decoration: underline !important;*/
   border-bottom: 1px solid #fff;
   text-decoration: none !important;
 }
@@ -41,7 +41,6 @@ strong {
 /*顶部的职位*/
 #introduction > div:nth-child(1) {
   font-size: 32px;
-  font-family: monospace !important;
   font-weight: bold;
   margin-top: 15px;
 }
@@ -78,6 +77,11 @@ strong {
 #infor-icon-graduate + .infor-value {
   margin-left: 9px;
 }
+
+.infor-item > a:visited {
+  color: #fff;
+}
+
 .infor-item > a {
   color: #fff;
 }
@@ -106,7 +110,7 @@ strong {
 
 /* 二维码和微信名*/
 #introduction > .image {
-  margin: 35px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 #introduction > .image,
 img {
@@ -138,7 +142,7 @@ img {
   font-weight: bold;
   font-size: 20px;
 }
-
+.experience-title > a:visited,
 .experience-title > a {
   color: #F2F2F2;
   font-size: 17px;
@@ -163,7 +167,7 @@ img {
   border-bottom: 1px solid #009999;
 }
 .skill-item {
-  margin: 0 18px 0 30px;
+  margin: 8px 18px 0 30px;
   font-size: 16px;
 }
 .skill-detail,
@@ -189,7 +193,7 @@ img {
   margin-top: 38px;
 }
 #conclusion-text-third {
-  margin-top: 17px;
+  margin-top: 7px;
 }
 #conclusion-text-fourth {
   margin-top: 17px;
@@ -207,58 +211,25 @@ img {
   background-color: #454545;
   border-radius: 10%;
   width: 3px;
-
   background-image: linear-gradient(#009999 50%, #454545 0);
 }
 #conclusion-first {
   height: 43px;
-  /*background-image: linear-gradient(#009999 10%, #454545 0);*/
 }
 #conclusion-second {
   height: 108px;
-  /*background-image: linear-gradient(#009999 20%, #454545 0);*/
 }
 #conclusion-third {
-  height: 64px;
-  /*background-image: linear-gradient(#009999 30%, #454545 0);*/
+  height: 43px;
 }
 #conclusion-fourth {
   height: 64px;
-  /*background-image: linear-gradient(#009999 40%, #454545 0);*/
 }
 #conclusion-fifth {
   height: 129px;
-  /*background-image: linear-gradient(#009999 50%, #454545 0);*/
 }
 #conclusion-sixth {
   height: 43px;
-  /*background-image: linear-gradient(#009999 60%, #454545 0);*/
 }
 
 
-
-/*闪烁动画*/
-/*@keyframes blink-smooth {
-  to {color: transparent;}
-}
-@-moz-keyframes blink-smooth {
-  to {color: transparent;}
-}
-@-o-keyframes blink-smooth {
-  to {color: transparent;}
-}
-@-webkit-keyframes blink-smooth {
-  to {color: transparent;}
-}
-
-#introduction > div:nth-child(1) {
-  animation: .5s blink-smooth 6 alternate;
-  -moz-animation: .5s blink-smooth 6 alternate;
-  -webkit-animation: .5s blink-smooth 6 alternate;
-  animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-}*/
-/*  animation: blink-smooth 2s steps(7);
-  white-space: nowrap;
-  overflow: hidden;*/
