@@ -127,7 +127,7 @@ img {
 /* 大标题 */
 #skill > h1,
 #experience > h1 {
-  margin: 25px 0 0 20px;
+  margin: 22px 0 20px 20px;
   font-size: 28px;
   font-weight: bold;
 }
@@ -178,6 +178,13 @@ img {
   margin-left: 15px;
 }
 
+.division {
+  /*width: 100%;*/
+  height: 1px;
+  margin: 20px 20px 0 20px;
+  background-color: #454545;
+}
+
 /* 每个项目经历的总结 */
 .conclusion-text {
   font-size: 22px;
@@ -190,7 +197,7 @@ img {
   margin-top: 7px;
 }
 #conclusion-text-second {
-  margin-top: 38px;
+  margin-top: 30px;
 }
 #conclusion-text-third {
   margin-top: 7px;
@@ -217,7 +224,7 @@ img {
   height: 43px;
 }
 #conclusion-second {
-  height: 108px;
+  height: 90px;
 }
 #conclusion-third {
   height: 43px;
