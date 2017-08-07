@@ -37,7 +37,7 @@ window.onload = function() {
     if (window.innerWidth >= 1440) {
       changeRate(true);
     } else if (window.innerWidth < 1440 && window.innerWidth >= 1200) {
-      console.log()
+      // console.log()
       changeRate(false);
     }
 
@@ -59,7 +59,7 @@ window.onload = function() {
   initial();
 
   var handler = function() {
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     if (window.innerWidth >= 1440) {
       if (display != 3) { 
         changeRate(true);
